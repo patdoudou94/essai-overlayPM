@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cuisine.css">
+    <link rel="stylesheet" href="dessert.css">
     <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -14,99 +16,281 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
-          <path d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z"/>
-        </svg> 
-        <a class="navbar-brand" href="#">Cuisto </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item mb-0 h4">
-              <a class="nav-link active" aria-current="page" href="index.html#index">Home</a>
-            </li>
-            <li class="nav-item mb-0 h4">
-              <a class="nav-link" href="evenement.html#evenement">Evenement</a>
-            </li>
-            <li class="nav-item  mb-0 h4 dropdown">
-              <a class="nav-link dropdown-toggle bg-dark text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Recettes
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="anti-inflamatoire.html">Anti-inflamatoire</a></li>
-                <li><a class="dropdown-item" href="recette.html#vegan">Vegan</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="recette.html#dessert-light">Patisserie light</a></li>
-              </ul>
-            </li>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
+      <path d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z"/>
+    </svg> 
+    <a class="navbar-brand" href="#">Cuisto </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item mb-0 h4">
+          <a class="nav-link" aria-current="page" href="index.html#index">Home</a>
+        </li>
+        <li class="nav-item mb-0 h4">
+          <a class="nav-link" href="evenement.html#evenement">Evenement</a>
+        </li>
+        <li class="nav-item  mb-0 h4 dropdown">
+          <a class="nav-link active dropdown-toggle bg-dark text-light bg-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Recettes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="anti-inflamatoire.html">Anti-inflamatoire</a></li>
+            <li><a class="dropdown-item" href="vegan.html#vegan">Vegan</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="dessert.html#dessert-light">Patisserie light</a></li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
-          </form>
-        </div>   
-      </div>
-    </nav>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>   
+  </div>
+</nav>
 
 
-    
 
-
-
-<footer class="footer w-100 bg-dark text-light">
-  <div class="card-foot">
-    <div class="row row-foot align-items-center">
-      <div class="col-sm-9">
-        <div class="card-body-foot">
-          <h5 class="card-title-foot text-center">Contact</h5>
-          <p class="card-text-foot">Pour tout renseignement veuillez cliquer sur ce bouton</p>
-          <a href="contact.html#contact" class="btn btn-primary btn-foot ">Contactez-nous <br/> <i class="bi bi-vector-pen"></i></a>
+  <div class="container container-recette-inflamation">
+    <div class="row">
+      <div class="card-inflammation col-md-4">
+        <img src="images/galette.jpeg" class="img-responsive" alt="galette">
+        <div class="card-body">
+          <h5 class="card-title">GALETTE DE POMME DE TERRE</h5>
+          <p class="card-text"> En Alsace, on adore les galettes de pommes de terre ! Et leur petit nom là-bas, c’est grumbeerekiechle. Alors oui, c’est imprononçable, mais la recette en revanche est super facile à réaliser. Elle peut même faire l’objet d’un atelier cuisine avec les enfants : ils adoreront à coup sûr essorer les pommes de terre en les pressant dans leurs mains ! On s’y met ? </p>
         </div>
-      </div>  
-      
-      <div class="col-md-3 reseaux">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="reseaux-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-              </svg>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="reseaux-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-              </svg>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="reseaux-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-              </svg>
-            </div>
+
+        <div class="ingredient">
+          <h5 class="fw-bold text-decoration-underline">Ingredients</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">4 grosses pommes de terre type Bintje</li>
+            <li class="list-group-item">1 œuf</li>
+            <li class="list-group-item">2 c. à soupe d’huile de tournesol</li>
+            <li class="list-group-item">2 oignons</li>
+            <li class="list-group-item">2 c. à soupe de farine blanche</li>
+            <li class="list-group-item">sel, poivre</li>
+          </ul>
+        </div>
+        
+        <div class="préparation">
+          <h5 class="fw-bold text-decoration-underline">Préparation</h5><i class="bi bi-hourglass-split"> 15min</i>
+          <p>1. Épluchez vos pommes de terre et vos oignons et râpez-les avec une râpe côté gros trous.</p>
+          <p>2. Mélangez bien les pommes de terre, les oignons, la farine et l’œuf dans un saladier, salez et poivrez. Vous pouvez aussi ajouter des herbes aromatiques ou des épices.</p>
+          <p>3. Dans une poêle, faites chauffer l'huile et disposez des petites galettes (versez une grosse cuiller de la préparation pour chaque galette, et aplatissez-la à l'aide de la cuiller).</p>
+          <p>4. Faites cuire à feu moyen jusqu'à ce que les galettes soient bien dorées de chaque côté.</p>
+          <p>5. Continuez tant qu'il reste de la pâte, puis servez les galettes accompagnées de salade verte.</p>
+        </div>
+      </div>
+
+      <div class="hidden col-md-4"></div>
+
+      <div class="card-inflammation col-md-4">
+        <img src="images/creme.jpg" class="img-responsive" alt="creme-choco">
+        <div class="card-body">
+          <h5 class="card-title">CREME AU CHOCOLAT VEGAN A L'AVOCAT</h5>
+          <p class="card-text">Une petite crème au chocolat vegan à l'avocat, ça vous tente ? Cette recette à l'avocat donne une crème dessert hyper onctueuse et chocolatée juste comme il faut. Ce dessert vegan est sain et riche en bonnes graisses grâce à l'avocat qu'il contient. Sans oeuf, ni lait, ni sucre ce dessert au chocolat convient à tous les régimes alimentaires et permet de s'octroyer une petite gourmandise sans culpabilité à l'heure du repas ou pour le goûter. Faites nous confiance, vous ne le regretterez pas !</p>
+        </div>
+        <div class="ingredient">
+          <h5 class="fw-bold text-decoration-underline">Ingredients</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1 avocat mûr</li>
+            <li class="list-group-item">25 g de cacao amer en poudre</li>
+            <li class="list-group-item">1 pincée de fleur de sel</li>
+            <li class="list-group-item">60 ml de sirop d'agave</li>
+            <li class="list-group-item">1/2 c. à café d'extrait de vanille liquide</li>
+          </ul>
+        </div>
+       
+        <div class="préparation">
+          <h5 class="fw-bold text-decoration-underline">Préparation</h5><i class="bi bi-hourglass-split"> 10min</i>
+          <p>1. Coupez en deux l'avocat, dénoyautez-le et récupérez la chair.</p>
+          <p>2. Placez la chair d'avocat avec le reste des ingrédients dans le bol d'un robot mixeur. Mixez pendant plusieurs minutes jusqu'à obtenir une texture bien crémeuse et onctueuse.</p>
+          <p>3. Placez la crème dans des ramequins ou des petits pots. Placez au frais jusqu'au service.</p>
+          <p>4. Servez cette crème au chocolat vegan à l'avocat bien fraîche.</p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="row">
+      <div class="card-inflammation col-sm-12 col-md-4">
+        <img src="images/falafel.jpeg" class="img-responsive" alt="falafel">
+        <div class="card-body">
+          <h5 class="card-title">FALAFELS VEGAN</h5>
+          <p class="card-text">Il est déjà 21h et vous décidez d’organiser une soirée improvisée entre amis à la maison. Problème : vous n’avez aucune idée et pas grand chose sous la main pour cuisiner ! Pas de panique, on a une recette en tête qui vous permettra de réaliser un apéritif vegan sensationnel et en moins de 15 minutes ! Les falafels vegan sont sans doute notre recette coup de cœur. Faciles et rapides à faire, ils font toujours l’unanimité. Bonne nouvelle, aujourd’hui on vous partage notre recette vegan préférée </p>
+        </div>
+        
+        <div class="ingredient">
+          <h5 class="fw-bold text-decoration-underline">Ingredients: (4 pers)</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">150 g de pois chiches secs</li>
+            <li class="list-group-item">2 cuillères à soupe de purée de sésame</li>
+            <li class="list-group-item">5 cl d’huile d’olive de qualité</li>
+            <li class="list-group-item">½ citron</li>
+            <li class="list-group-item">Une pincée de cumin en poudre</li>
+            <li class="list-group-item">50 g de farine de pois chiches</li>
+            <li class="list-group-item">1 gousse d’ail</li>
+            <li class="list-group-item">3 cl d’eau</li>
+            <li class="list-group-item">1 bouquet de coriandre</li>
+            <li class="list-group-item">Sel et poivre</li>
+          </ul>
+        </div>
+        
+        <div class="préparation">
+          <h5 class="fw-bold text-decoration-underline">Préparation</h5><i class="bi bi-hourglass-split"> 5min</i>
+          <p>1. La veille, pensez à faire tremper les pois chiches dans un grand volume d’eau à température ambiante. Le jour J, rincez-les et faites-les cuire dans de l’eau bouillante pendant 1h à 1h30. Vous pouvez aussi utiliser 300g de pois chiches en boîte pour la version express !</p>
+          <p>2. Préchauffez le four à 200°C puis réalisez la pâte à falafels vegan. Mixez ensemble les pois chiches, l’ail, la purée de sésame, l’huile d’olive, la farine et l’eau jusqu’à obtenir une pâte homogène, mais pas trop liquide. Ajoutez la coriandre, le cumin, le jus de citron, le sel et le poivre</p>
+          <p>3. Réalisez de petites boulettes de pâtes à la main et disposez-les sur une plaque allant au four recouverte de papier cuisson.</p>
+          <p>4. Faites cuire vos falafels au four jusqu’à ce qu’ils soient bien dorés, c’est à dire une quinzaine de minutes. Servez-les accompagnés de pains pita pour une entrée vegan traditionnelle</p>
+        </div>
+      </div>
+
+      <div class="hidden col-md-4"></div>
+
+      <div class="card-inflammation  bg-^rimary col-sm-12 col-md-4">
+        <img src="images/houmous.webp" class="img-responsive" alt="ginger-juce">
+        <div class="card-body">
+          <h5 class="card-title">HOUMOUS VERT AU POIS CHICHE CORIANDRE ET BASILIC</h5>
+          <p class="card-text">Un délicieux houmous, intense et coloré, parfumé, qui sera le clou d'un apéritif !
+
+          </p>
+        </div>
+        <div class="ingredient">
+          <h5 class="fw-bold text-decoration-underline">Ingredients</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1 boite de pois chiche</li>
+            <li class="list-group-item">2cm de gingembre frais (1 morceau)</li>
+            <li class="list-group-item">1 citron bio</li>
+            <li class="list-group-item">1 bouquet de basilic</li>
+            <li class="list-group-item">Sel poivre de cayenne</li>
+            <li class="list-group-item">Ail</li>
+            <li class="list-group-item">Tahin bio purée de sésame</li>
+            <li class="list-group-item">Coriandre</li>
+            <li class="list-group-item">Huile d'olive</li>
+          </ul>
+        </div>
+       
+        <div class="préparation">
+          <h5 class="fw-bold text-decoration-underline">Préparation</h5><i class="bi bi-hourglass-split"> 5min</i>
+          <p>1. Rincer les pois chiches et bien les égoutter. Rincer et effeuiller les herbes. Éplucher la gousse d'ail. Éplucher et couper le gingembre en lamelles. Presser le citron, récupérer le jus.</p>
+          <p>2.Mettre les pois chiches, les herbes, l'ail, le gingembre, le tahin, l'huile et le jus de citron dans le bol du mixeur. Mixer jusqu'à obtention d'un mélange homogène. Rectifier l'assaisonnement. </p>
+          <p>3. Servir parsemé d'une pincée de piment en accompagnant de toasts, de tartines de pain ou de gressins.</p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="row">
+      <div class="card-inflammation col-sm-12 col-md-4">
+        <img src="images/cappucino.webp" class="img-responsive" alt="hoummous">
+        <div class="card-body">
+          <h5 class="card-title">Verrine cappucino glacé carotte cumin</h5>
+          <p class="card-text"> Découvrez la recette de Verrines de cappuccino glacé carottes et cumin. Servis dans des verres à shooters, ces onctueux cappuccinos se dégustent en guise de mises en bouche et à la petite cuillère. A la vôtre !</p>
+        </div>
+        
+        <div class="ingredient">
+          <h5 class="fw-bold text-decoration-underline">Ingredients</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">600 g de carottes</li>
+            <li class="list-group-item">40 cl de bouillon de volaille</li>
+            <li class="list-group-item">30 cl de crème liquide</li>
+            <li class="list-group-item">Quelques pincées de cumin</li>
+            <li class="list-group-item">Sel et poivre</li>
+            <li class="list-group-item">Paprika en poudre</li>
+          </ul>
+        </div>
+        
+        <div class="préparation">
+          <h5 class="fw-bold text-decoration-underline">Préparation</h5><i class="bi bi-hourglass-split"> 15min</i>
+          <p>1. Épluchez et coupez les carottes en petites rondelles. Faites-les cuire 20 minutes dans le bouillon.</p>
+          <p>2. Mixez le tout finement dans un blender, avec 20 cl de crème liquide et 4 pincées de cumin, afin d'obtenir un velouté onctueux et sans grumeaux. Laissez refroidir, versez dans les verrines puis placez 1 à 2 heures au réfrigérateur.</p>
+          <p>3.Montez les 10 cl de crème liquide restante en chantilly, avec un peu de de sel, de poivre et 3 pincées de cumin. À l'aide d'une poche à douille, surmontez les verrines de chantilly au cumin, et parsemez de paprika.</p>
+        </div>
+      </div>
+
+      <div class="hidden col-md-4"></div>
+
+      <div class="card-inflammation col-sm-12 col-md-4">
+        <img src="images/salade.webp" class="img-responsive" alt="ginger-juce">
+        <div class="card-body">
+          <h5 class="card-title">Salade d'avocat à la mangue et oignon rouge</h5>
+          <p class="card-text">Une salade fraîche et colorée, aux saveurs asiatiques, prête en un tour de main.</p>
+        </div>
+        <div class="ingredient">
+          <h5 class="fw-bold text-decoration-underline">Ingredients</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1 oignon rouge</li>
+            <li class="list-group-item">1 mangue</li>
+            <li class="list-group-item">3 petits avocats ou deux moyens</li>
+            <li class="list-group-item">Le jus d'un citron vert</li>
+            <li class="list-group-item">½ cuillère à soupe d’huile de sésame (ou moitié huile d’olive moitié huile de sésame)</li>
+            <li class="list-group-item">Quelques graines de sésame pour servir></li>
+          </ul>
+        </div>
+       
+        <div class="préparation">
+          <h5 class="fw-bold text-decoration-underline">Préparation</h5><i class="bi bi-hourglass-split"> 5min</i>
+          <p>1.Émincer l’oignon rouge, saler, mélanger, réserver.</p>
+          <p>2.Découper la mangue et les avocats en dés, les ajouter à l’oignon.</p>
+          <p>3. Pour faire l’assaisonnement : ajouter le jus de citron vert et l’huile de sésame à la salade, bien mélanger, parsemer de graines de sésame, et servir immédiatement ou réfrigérer jusqu’au moment de servir.</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <footer class="footer w-100 bg-dark text-light">
+    <div class="card-foot">
+      <div class="row row-foot align-items-center">
+        <div class="col-sm-9">
+          <div class="card-body-foot">
+            <h5 class="card-title-foot text-center">Contact</h5>
+            <p class="card-text-foot">Pour tout renseignements veuillez cliquer sur ce bouton</p>
+            <a href="contact.html#contact" class="btn btn-foot btn-primary">Contactez-nous <br/> <i class="bi bi-vector-pen"></i></a>
           </div>
         </div>  
+        
+        <div class="col-md-3 reseaux">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="reseaux-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="reseaux-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="reseaux-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </div>
+            </div>
+          </div>  
+        </div>
       </div>
+    </div> 
+      
+      
+    <!-- Copyright -->
+    <div class="copyright bg-primary text-center p-3 fw-bold">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://github.com/cecilia948/essai-overlay.git">https://github.com/cecilia948/essai-overlay.git</a>
     </div>
-  </div> 
-    
-    
-  <!-- Copyright -->
-  <div class="text-center p-3 bg-primary fw-bold">
-    © 2021 Copyright:
-    <a class="text-dark" href="https://github.com/cecilia948/essai-overlay.git">https://github.com/cecilia948/essai-overlay.git</a>
-  </div>
-  <!-- Copyright -->
-
-
-
-
+    <!-- Copyright -->
+  
+  
+  </footer>
+  
 
 </body>
 </html>

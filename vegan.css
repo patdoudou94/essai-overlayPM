@@ -4,6 +4,9 @@
     width: 100%;
 }
 
+
+
+
 .footer {
     padding-top: 1%;
 }
@@ -16,7 +19,11 @@
 
 
 
-
+.card-foot {
+    height: 180px;
+    padding: 1%;
+    margin: 2%;
+}
 
 .nav-item {
     padding-right: 3%;

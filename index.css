@@ -4,16 +4,38 @@
     font-size: 20px;
 }
 
+
 .card-body-foot {
     margin-bottom: 2%;
 }
 
+
 .navbar {
+    position: absolute;
+    z-index: 10;
     height: 100px;
 }
 
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.img-cuisto {
+    width: 90%;
+    height: 50%;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
 .card-foot {
-    height: 150px;
+    
     padding: 1%;
     margin: 2%;
 }
@@ -58,10 +80,6 @@ img {
 
 .sidebar {
     height: auto;
-}
-
-.img-card-top {
-    height: 200px;
 }
 
 .card {
@@ -109,8 +127,9 @@ img {
     padding-left: 3%;
 }
 
-
-
+.card-vegan {
+    padding: 2%;
+}
 
 .intro-vegan {
     padding: 3%;
@@ -126,15 +145,11 @@ img {
 }
 
 
-
-.btn-primary {
-    margin-bottom: 3%;
-}
-
-
 .container-recette-inflamation {
     margin-top: 5%;
 }
+
+
 
 /*
 .carousel-caption {
